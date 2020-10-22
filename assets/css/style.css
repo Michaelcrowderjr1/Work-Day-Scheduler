@@ -1,1 +1,116 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
 
+/* CSS for textarea that contains the verbiage */
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+/* CSS for Jumbotron for heading at top */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+/* CSS for time-block of each hour row */
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* Define CSS for each row */
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+  overflow: hidden;
+}
+
+.first {
+  border-top: 1px solid black;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+/* Styling for each textarea as to whether the time is in the past, present or future. */
+.past {
+  background-color: #d3d3d3;
+  color: black;
+}
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+/* Button CSS */
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  text-align: center;
+  line-height: 50%;
+  font-size: 24px;
+}
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  color: black;
+  background-color: #06AED5;
+}
+.saveBtn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Clear Button CSS */
+.clearBtn {
+  float: center;
+  border-radius: 10px;
+  background-color: #06AED5;
+  color: white;
+  opacity: 1;
+  font-size: 25px;
+  padding: 5px;
+  margin: auto;
+  display: block;
+}
+.clearBtn:Hover {
+  font-size: 30px;
+  opacity: 0.6;
+  transition: all .3s ease-in-out;
+}
+.clearBtn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* A Media Query max-width: 960px */
+@media screen and (max-width: 960px) {
+ 
+    /* Styles for the wrapper div */
+        .container {
+            width: auto;
+            margin: 0 auto;
+        }
+}
